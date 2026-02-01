@@ -42,9 +42,6 @@ Thumbs.db
 
 # --- Project Specific  ---
 Runs/
-PDFs/
-*.jpg
-*.png
 *.pdf
 
 # --- Environment Variables ---
