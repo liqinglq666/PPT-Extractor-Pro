@@ -1,0 +1,51 @@
+import tkinter as tk
+import ttkbootstrap as tb
+from ttkbootstrap.constants import *
+import time
+
+def run_system_loader(root):
+    """Note: 标准化系统启动序列，执行环境预检模拟"""
+    root.withdraw()
+    splash = tb.Toplevel(root)
+    splash.overrideredirect(True)
+    splash.attributes('-topmost', True)
+
+    w, h = 720, 420
+    x = (splash.winfo_screenwidth() - w) // 2
+    y = (splash.winfo_screenheight() - h) // 2
+    splash.geometry(f"{w}x{h}+{x}+{y}")
+
+    bg = tb.Frame(splash, bootstyle="dark")
+    bg.pack(fill=BOTH, expand=True)
+
+    tb.Label(bg, text="PPT EXTRACTOR", font=("Segoe UI", 48, "bold"),
+             bootstyle="inverse-dark", foreground="#29B6F6").pack(pady=(50, 5))
+    tb.Label(bg, text="Professional Production Suite v3.2.1", font=("Segoe UI", 12),
+             bootstyle="inverse-dark", foreground="#666").pack(pady=(0, 40))
+
+    lbl_status = tb.Label(bg, text="Initializing...", font=("Consolas", 10),
+                          bootstyle="inverse-dark", foreground="#888")
+    lbl_status.pack(side=BOTTOM, pady=(0, 30))
+
+    progress = tb.Progressbar(bg, bootstyle="info-striped", length=600, mode='determinate')
+    progress.pack(side=BOTTOM, pady=(0, 10))
+
+    steps = [
+        ("Loading Kernel Components...", 0.3),
+        ("Mounting Computer Vision Modules...", 0.4),
+        ("Synchronizing Detection Algorithms...", 0.4),
+        ("System Ready.", 0.5)
+    ]
+
+    curr = 0.0
+    for text, delay in steps:
+        lbl_status.config(text=f"> {text}")
+        target = curr + (100.0 / len(steps))
+        while curr < target:
+            curr += 0.8
+            progress['value'] = min(curr, 100)
+            splash.update()
+            time.sleep(0.005)
+        time.sleep(delay)
+    splash.destroy()
+    root.deiconify()

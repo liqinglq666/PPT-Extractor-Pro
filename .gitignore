@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+bin/
+build/
+dist/
+*.egg-info/
+*.spec
+
+# PyCharm / IDE
+.idea/
+.vscode/
+
+# Local environment
+.venv/
+venv/
+env/
+
+# Project specific
+assets/*.bak
+*.log
+output/
+
+# --- OS Specific  ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Media Files ---
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.flv
+
+# --- Project Specific  ---
+Runs/
+PDFs/
+*.jpg
+*.png
+*.pdf
+
+# --- Environment Variables ---
+.env
+.env.local
