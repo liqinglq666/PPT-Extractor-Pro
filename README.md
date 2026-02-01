@@ -81,6 +81,7 @@
 ## 📸 界面长这样
 
 *( 界面：左边配置参数，右边实时监控，底部状态反馈 )*
+
 <div align="center">
   <h3>🖥️ 主界面 (Main UI)</h3>
   <img src="./img_1.png" width="100%" alt="Main Interface" />
@@ -90,6 +91,7 @@
   <h3>⚙️ 参数配置 (Settings)</h3>
   <img src="./img_3.png" width="100%" alt="Settings Interface" />
 </div>
+
 
 ---
 
