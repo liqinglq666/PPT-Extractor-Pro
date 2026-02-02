@@ -145,10 +145,10 @@
 
 ```bash
 # 1. 克隆仓库
-git clone [https://github.com/liqinglq666/PPT-Extractor-Pro.git](https://github.com/liqinglq666/PPT-Extractor-Pro.git)
+git clone https://github.com/liqinglq666/PPT-Extractor-Pro.git
 
-# 2. 安装依赖 (反正就这几个)
-pip install opencv-python pillow ttkbootstrap numpy
+# 2. 安装依赖 
+pip install -r requirements.txt
 
 # 3. 启动
 python main.py
