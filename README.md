@@ -26,7 +26,7 @@
 
 ### 🧬 核心算法架构 (Core Algorithmic Architecture)
 
-*(注：本部分采用了**计算机视觉**领域的术语，方便你在写工具介绍时显得很专业)*
+
 
 本系统摒弃了低效的“时钟驱动（Timer-driven）”采样策略，转而采用了一套 **时空联合的视觉显著性感知框架 (Spatio-Temporal Visual Saliency Perception Framework)**。
 
