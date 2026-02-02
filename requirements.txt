@@ -1,5 +1,10 @@
-PyQt5
-python-pptx
-pillow
-opencv-python
-numpy
+# GUI 框架
+PyQt5>=5.15.0
+
+# PPT 解析
+python-pptx>=0.6.21
+
+# 图像处理
+Pillow>=10.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
